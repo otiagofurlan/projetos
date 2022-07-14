@@ -176,6 +176,9 @@ div.video > iframe {
     height: 90%;
 }
 
+li {
+    text-decoration: none;
+}
 
 footer {
     text-align: center;
