@@ -99,13 +99,20 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1224px) {
+@media screen and (max-width: 1180px) {
     section img {
         width: 350px;
     }
 }
 
-@media screen and (max-width: 724px) {
+@media screen and (max-width: 810px) {
+    section img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 530px) {
     header p {
         display: none;
     }

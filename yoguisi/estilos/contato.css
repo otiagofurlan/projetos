@@ -72,8 +72,8 @@ body {
 
 section {
     background-color: #572d5e;
-    width: 390px;
-    height: 530px;
+    width: 550px;
+    height: 680px;
     margin: auto;
     text-align: center;
     margin-bottom: 40px;
@@ -117,7 +117,19 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+    section {
+        width: 90%;
+    }
+    section img {
+        width: 15%;
+    }
+    iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 530px) {
     header p {
         display: none;
     }
