@@ -11,6 +11,7 @@
 
 html, body {
     min-height: 100vh;
+    min-width: 100%;
 }
 
 header {
@@ -19,7 +20,6 @@ header {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
-    width: 100vw;
 }
 
 header h1 {
@@ -45,13 +45,14 @@ nav {
     background-color: #572d5e;
     font-family: 'Allerta';
     text-align: center;
-    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
 }
 
 nav a:hover {
