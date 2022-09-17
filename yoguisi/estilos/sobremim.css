@@ -68,17 +68,39 @@ section {
     text-align: center;
 }
 
-
 div {
     display: inline-block;
+    vertical-align: top;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .texto {
     background-color: #572d5e;
-    width: 500px;
-    height: 500px;
-    vertical-align: top;
+    width: 400px;
+    height: 400px;
+    color: white;
+    font-family: 'Albert Sans', sans-serif;
+    text-align: left;
+}
+
+div h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div p {
+    text-indent: 20px;
+    line-height: 1.5em;
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+img {
+    max-width: 400px;
 }
 
 footer {
@@ -99,4 +121,10 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width:700px) {
+    header p {
+        display: none;
+    }
 }
