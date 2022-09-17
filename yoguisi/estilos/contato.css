@@ -13,12 +13,6 @@ html, body {
     min-height: 100vh;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
 header {
     background-color: #63326B;
     color: white;
@@ -69,6 +63,12 @@ nav a:hover {
 main {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 section {
