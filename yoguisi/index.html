@@ -4,29 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - YoguiSi</title>
+    <title>YoguiSi</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css" media="screen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
         <header>
-            <h1>YoguiSi</h1>
-            <P>Natureza, <br> bichos e muito Yoga!</P>
+            <div id="cabeçalho">
+                <p>Simone Furlan.</p>
+                <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                <menu id="itens">
+                    <ul>
+                        <li><a href="">Início</a></li>
+                        <li><a href="">Yoga</a></li>
+                        <li><a href="">Benefícios</a></li>
+                    </ul>
+                </menu>
+            </div>
+            <div id="inicio">
+                <h1>YoguiSi</h1>
+            </div>
         </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="contato.html">Contato</a>
-            <a href="sobremim.html">Sobre Mim</a>
-        </nav>
         <main>
-            <section>
-                <img src="imagens/Screenshot_1.png" alt="">
-                <img src="imagens/Screenshot_2.png" alt=""> <br>
-                <img src="imagens/Screenshot_3.png" alt="">
-                <img src="imagens/Screenshot_4.png" alt="">
+            <section id="fotos">
+                <img src="imagens/imagem-03.jpg" alt="">
+                <img src="imagens/imagem-07.jpg" alt=""> <br>
+                <img src="imagens/imagem-06.png" alt="">
+                <img src="imagens/imagem-01.jpg" alt=""> <br>
+                <img src="imagens/imagem-04.png" alt="">
+                <img src="imagens/imagem-05.png" alt=""> 
             </section>
+            <section id="sobre">
+                <h1>Sobre</h1>
+                <img src="imagens/perfil.jpg" alt="">
+                <div class="texto">
+                    <h2>Simone Furlan</h2>
+                    <p>Minha jornada no yoga começou em setembro de 2018, com 47 anos. Tive que parar de participar das aulas na academia quando veio a pandemia em 2020, o que não me impediu de continuar praticando em casa e foi o que me deu suporte naquele período difícil! Agora estou concluindo o curso de instrutora de yoga e é o que eu quero pra vida toda! Amo demais! </p>
+                </div>
+            </section>
+            <footer>
+                <p>Site desenvolvido por <a href="https://www.instagram.com/otiagofurlan/" target="_blank">Tiago Furlan</a>.</p>
+                <section id="contato">
+                    <menu id="social">
+                        <ul>
+                            <li><a href="https://www.instagram.com/simonee.furlan/" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                            <li><a href="https://youtube.com/channel/UCiBpg4daeP_T-iYLFDAFaNQ" target="_blank"><img src="imagens/youtube.png" alt="Youtube"></a></li>
+                            <li><a href="https://www.facebook.com/simone.furlan.90" target="_blank"><img src="imagens/facebook.jpg" alt="Facebook"></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=5515996341813" target="_blank"><img src="imagens/whatsapp.png" alt="Whatsapp"></a></li>
+                        </ul>
+                    </menu>
+                </section>
+            </footer>
         </main>
-        <footer>
-            <p>Site desenvolvido por <a href="https://www.instagram.com/otiagofurlan/" target="_blank">Tiago Furlan</a>.</p>
-        </footer>
+        <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+            
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+              itens.style.display = 'block'
+            }
+         }
+        </script>
 </body>
 </html>
