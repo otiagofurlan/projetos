@@ -4,15 +4,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
 
+/* configurações globais */
+
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Sora';
 }
 
 html, body {
     width: 100%;
     height: 100vh;
 }
+
+/* header */
 
 header {
     height: 100vh;
@@ -33,7 +38,6 @@ div#cabeçalho p {
     display: inline-block;
     padding-top: 5px;
     font-size: 1.2em;
-    font-family: 'Sora';
     color: #170F11;
 }
 
@@ -54,7 +58,6 @@ menu#itens {
 }
 
 menu#itens li {
-    font-family: 'Sora';
     display: inline-block;
     padding-left: 30px;
     list-style-type: none;
@@ -80,6 +83,8 @@ div#inicio h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.550);
 }
 
+/* section fotos */
+
 section#fotos {
     text-align: center;
     margin-top: 60px;
@@ -87,6 +92,7 @@ section#fotos {
 
 section#fotos img {
     margin: 20px;
+    border-radius: 8px;
 }
 
 /* section sobre */
@@ -97,7 +103,6 @@ section#sobre {
 
 section#sobre h1 {
     font-size: 4em;
-    font-family: 'Sora';
     font-weight: 400;
     text-align: center;
     margin-top: 60px;
@@ -111,12 +116,13 @@ section#sobre div {
     padding: 30px;
 }
 
-section img {
+section#sobre img {
     display: inline-block;
     background-image: url(../imagens/perfil.jpg);
     background-size: cover;
     background-position: center;
     width: 400px; 
+    border-radius: 8px;
 }
 
 div.texto {
@@ -128,21 +134,21 @@ div.texto {
 }
 
 div.texto h2 {
-    font-family: 'Edu TAS Beginner';
     font-size: 2.5em;
-    font-weight: 500;
+    font-weight: 300;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
 div.texto p {
-    font-family: 'Sora';
     font-size: 1.3em;
     font-weight: 300;
     text-align: justify;
     text-indent: 20px;
     line-height: 1.7em;
 }
+
+/* footer */
 
 footer {
     background-color: #48A3BD;
@@ -154,7 +160,6 @@ footer p {
     display: inline-block;
     margin-left: 100px;
     color: #E2FCEF;
-    font-family: "Sora";
     font-size: 1.2em;
     padding-top: 20px;
 }
