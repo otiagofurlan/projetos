@@ -21,7 +21,7 @@ html, body {
 
 header {
     height: 100vh;
-    background-image: url(../imagens/pexels-eberhard-grossgasteiger-2310713.jpg);
+    background-image: url(../imagens/background.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
