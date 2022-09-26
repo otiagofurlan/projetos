@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    height: 100vh;
+    background: url(../imagens/imagem-02.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+div#cabeçalho {
+    background-color: white;
+    padding: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+div#cabeçalho p {
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 1.2em;
+    font-family: 'Sora';
+    color: rgb(0, 0, 0);
+}
+
+span#burguer {
+    display: none;
+    float: right;
+    padding-top: 5px;
+}
+
+span#burguer:hover {
+    cursor: pointer;
+}
+
+menu#itens {
+    display: block;
+    padding-top: 5px;
+    float: right;
+}
+
+menu#itens li {
+    font-family: 'Sora';
+    display: inline-block;
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+menu#itens a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+}
+
+section#sobre {
+    text-align: center;
+}
+
+section#sobre div {
+    padding: 30px;
+}
+
+section#sobre h1 {
+    font-size: 4em;
+    font-family: 'Sora';
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.texto {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    vertical-align: top;
+    margin-bottom: 100px;
+}
+
+div.texto h2 {
+    font-family: 'Edu TAS Beginner';
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+div.texto p {
+    font-family: 'Sora';
+    font-size: 1.3em;
+    font-weight: 300;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.6em;
+}
+
+div.imagem {
+    display: inline-block;
+    background-image: url(../imagens/perfil.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+
+    div#cabeçalho {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    span#burguer {
+        display: block;
+    }
+
+    menu#itens {
+        margin-top: 40px;
+        margin-right: -25px;
+    }
+
+    menu#itens li{
+        display: block;
+        background-color: white;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    div#inicio h1 {
+        font-size: 6em;
+    }
+    div.imagem {
+        height: 300px;
+        width: 300px;
+    }
+
+    div.texto {
+        height: 300px;
+        width: 300px;
+    }
+
+    div.texto p {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+}
+
