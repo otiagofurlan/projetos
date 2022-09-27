@@ -3,7 +3,7 @@
 /* yoguisi */
 
 @media screen and (max-height:700px) {
-    header {
+    header#principal {
         height: 70vh;
     }
 }
