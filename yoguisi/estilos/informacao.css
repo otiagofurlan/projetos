@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
 
 * {
     padding: 0px;
@@ -10,14 +9,13 @@
     color: #170F11;
 }
 
-/* header */
-
-header {
-    height: 45vh;
+main {
+    height:100%;
     background-image: url(../imagens/background.jpg);
     background-size: cover;
     background-position: top;
-    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 div#cabeçalho {
@@ -47,6 +45,7 @@ menu#itens {
     text-align: center;
     padding-top: 5px;
     float: right;
+    padding-left: 30px;
 }
 
 menu#itens li {
@@ -60,88 +59,33 @@ menu#itens a {
     font-size: 1.2em;
 }
 
-div#inicio {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+section#local {
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    width: 70%;
 }
 
-div#inicio h1 {
-    color: #E2FCEF;
-    font-family: 'Edu TAS Beginner';
-    font-size: 8em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.350);
-    padding-top: 30px;
+section#local iframe {
+    margin-bottom: 20px;
+    width: 100%;
 }
 
-/* section fotos */
-
-section#fotos {
-    text-align: center;
-    margin-top: 60px;
-}
-
-section#fotos img {
-    margin: 20px;
-    border-radius: 8px;
-}
-
-/* section sobre */
-
-section#sobre {
-    text-align: center;
-}
-
-section#sobre div {
-    padding: 30px;
-}
-
-section#sobre img {
-    display: inline-block;
-    background-image: url(../imagens/perfil.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 400px; 
-    border-radius: 8px;
-}
-
-section#sobre h1 {
-    font-size: 3em;
+section#local h1 {
+    font-size: 2em;
     font-weight: 400;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    background-color: #a6acd6;
-    padding: 20px;
-    color: #E2FCEF;
+    padding: 0px 20px 20px 20px;
 }
 
-div.texto {
-    display: inline-block;
-    width: 400px;
-}
-
-div.texto p {
-    font-size: 1.4em;
-    font-weight: 300;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1.5em;
-}
-
-div p.data {
-    padding: 10px;
-    font-size: 1.2em;
-    text-align: right;
-    color: rgb(63, 63, 63);
+section#local p {
+    padding: 5px;
 }
 
 /* footer */
 
 footer {
     background-color: #48A3BD;
-    margin-top: 60px;
     height: 60px;
 }
 
@@ -175,16 +119,16 @@ section#contato > menu li {
 }
 
 section#contato > menu img {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.300);
+    width: 35px;
+    height: 35px;
     box-sizing: border-box; 
     border: 2px solid white;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.300); 
 }
 
 section#contato > menu img:hover {
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.300);
     transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.300);
     transition: transform .5s, border .5s;
 }

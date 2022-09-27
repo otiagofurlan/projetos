@@ -12,12 +12,13 @@
 
 /* header */
 
-header {
-    height: 45vh;
+main {
+    height: 100%;
     background-image: url(../imagens/background.jpg);
     background-size: cover;
     background-position: top;
-    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 div#cabeçalho {
@@ -60,88 +61,29 @@ menu#itens a {
     font-size: 1.2em;
 }
 
-div#inicio {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+article {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 40px;
 }
 
-div#inicio h1 {
-    color: #E2FCEF;
-    font-family: 'Edu TAS Beginner';
-    font-size: 8em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.350);
-    padding-top: 30px;
+article h1 {
+    font-size: 1.5em;
 }
 
-/* section fotos */
-
-section#fotos {
-    text-align: center;
-    margin-top: 60px;
-}
-
-section#fotos img {
-    margin: 20px;
-    border-radius: 8px;
-}
-
-/* section sobre */
-
-section#sobre {
-    text-align: center;
-}
-
-section#sobre div {
-    padding: 30px;
-}
-
-section#sobre img {
-    display: inline-block;
-    background-image: url(../imagens/perfil.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 400px; 
-    border-radius: 8px;
-}
-
-section#sobre h1 {
-    font-size: 3em;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    background-color: #a6acd6;
-    padding: 20px;
-    color: #E2FCEF;
-}
-
-div.texto {
-    display: inline-block;
-    width: 400px;
-}
-
-div.texto p {
-    font-size: 1.4em;
-    font-weight: 300;
-    text-align: justify;
-    text-indent: 30px;
+article p {
+    font-size: 1.1em;
     line-height: 1.5em;
 }
 
-div p.data {
-    padding: 10px;
-    font-size: 1.2em;
-    text-align: right;
-    color: rgb(63, 63, 63);
+article ul {
+    margin-left: 20px;
+    line-height: 2em;
 }
-
-/* footer */
 
 footer {
     background-color: #48A3BD;
-    margin-top: 60px;
     height: 60px;
 }
 
