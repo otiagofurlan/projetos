@@ -2,6 +2,12 @@
 
 /* yoguisi */
 
+@media screen and (max-height:700px) {
+    header {
+        height: 70vh;
+    }
+}
+
 @media screen and (max-width: 1100px) and (min-width: 700px){
     section#fotos img {
         width: 40%;
