@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
 
 * {
     padding: 0px;
@@ -10,12 +9,19 @@
     color: #170F11;
 }
 
-/* header */
+main {
+    background-image: url(../imagens/background.jpg);
+    background-size: cover;
+    background-position: top;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/*-----------HEADER----------*/
 
 header {
     height: 50px;
-    background-color: #a6acd6;
-    margin-bottom: 60px;
+    background-color: #ffffff;
 }
 
 menu#social {
@@ -49,7 +55,6 @@ div#cabeçalho {
 
 div#cabeçalho h1 {
     font-size: 1.3em;
-    color: white;
     float: left;
     padding-right: 25px;
     padding-top: 2px;
@@ -59,7 +64,6 @@ span#burguer {
     display: none;
     float: left;
     padding-top: 4px;
-    color: white;
 }
 
 span#burguer:hover {
@@ -76,81 +80,18 @@ menu#itens {
 menu#itens li {
     display: inline-block;
     padding-left: 25px;
-    background-color: #a6acd6;
+    background-color: white;
 }
 
 menu#itens a {
     text-decoration: none;
     font-size: 1.2em;
-    color: white;
 }
 
-/* section fotos */
-
-section#fotos {
-    text-align: center;
-}
-
-section#fotos img {
-    margin: 20px;
-    border-radius: 8px;
-}
-
-/* section sobre */
-
-section#sobre {
-    text-align: center;
-}
-
-section#sobre div {
-    padding: 30px;
-}
-
-section#sobre img {
-    display: inline-block;
-    background-image: url(../imagens/perfil.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 400px; 
-    border-radius: 8px;
-}
-
-section#sobre h1 {
-    font-size: 3em;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    background-color: #a6acd6;
-    padding: 20px;
-    color: #E2FCEF;
-}
-
-div.texto {
-    display: inline-block;
-    width: 400px;
-}
-
-div.texto p {
-    font-size: 1.4em;
-    font-weight: 300;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 1.5em;
-}
-
-div p.data {
-    padding: 10px;
-    font-size: 1.2em;
-    text-align: right;
-    color: rgb(63, 63, 63);
-}
-
-/* footer */
+/*-----------FOOTER----------*/
 
 footer {
     background-color: #48A3BD;
-    margin-top: 60px;
     height: 60px;
 }
 

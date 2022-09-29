@@ -1,56 +1,28 @@
 @charset "UTF-8";
 
-/* yoguisi */
-
-@media screen and (max-height:700px) {
-    header#principal {
-        height: 70vh;
-    }
-}
-
 @media screen and (max-width: 1100px) and (min-width: 700px){
     section#fotos img {
         width: 40%;
     }
 } 
 
-@media screen and (max-width: 863px) {
-    footer p {
-        display: none;
-    }
-
-    section#contato {
-        margin: 0px;
-        display: inline;
-        float: none;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     div#cabeçalho {
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    span#burguer {
-        display: block;
-    }
-
-    menu#itens {
-        display: none;
-        margin-top: 40px;
-        margin-right: -25px;
+    div#cabeçalho h1 {
+        font-size: 1.3em;
+        border-right: 0px;
     }
 
     menu#itens a {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
-    menu#itens li{
-        display: block;
-        background-color: #E2FCEF;
-        padding: 3px;
+    menu#itens li {
+        padding-left: 5px;
     }
 
     section#sobre h1 {
@@ -58,9 +30,32 @@
     }
 }
 
-@media screen and (max-width: 550px) {
-    div#inicio h1 {
-        font-size: 4.5em;
+@media screen and (max-width: 650px) {
+    section#local {
+        width: 95%;
+    }
+    article {
+        width: 80%;
+        padding: 15px;
+    }
+    iframe {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    span#burguer {
+        display: block;
+    }
+
+    menu#itens {
+        display: none;
+        margin-top: 15px;
+    }
+
+    menu#itens li{
+        display: inline-block;
+        padding: 8px;
     }
 
     section img {
@@ -81,23 +76,13 @@
     }
 }
 
-@media screen and (max-width: 355px) {
-    menu#itens {
-        display: none;
-        margin-top: 10px;
-        margin-right: -20px;
-    }
-}
-
-/* informações */
-
-@media screen and (max-width: 350px) {
-    iframe {
-        height: 300px;
+@media screen and (max-width: 380px) {
+    div#cabeçalho h1 {
+        font-size: 1.3em;
     }
 
-    section#local {
-        padding: 5px;
+    footer p {
+        font-size: .9em;
     }
 
     section#local h1 {
@@ -105,14 +90,8 @@
     }
 }
 
-@media screen and (max-width: 300px) {
-    iframe {
-        height: 300px;
-    }
-}
-
-@media screen and (max-height: 650px) {
-    iframe {
-        height: 300px;
+@media screen and (max-width: 350px) {
+    div#cabeçalho h1 {
+        display: none;
     }
 }

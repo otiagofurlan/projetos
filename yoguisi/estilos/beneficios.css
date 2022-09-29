@@ -1,71 +1,11 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
-
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Sora';
-    color: #170F11;
-}
-
-/* header */
-
-main {
-    height: 100%;
-    background-image: url(../imagens/background.jpg);
-    background-size: cover;
-    background-position: top;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-div#cabeçalho {
-    background-color: #E2FCEF;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-div#cabeçalho p {
-    display: inline-block;
-    padding-top: 5px;
-    font-size: 1.2em;
-}
-
-span#burguer {
-    display: none;
-    float: right;
-    padding-top: 5px;
-}
-
-span#burguer:hover {
-    cursor: pointer;
-}
-
-menu#itens {
-    text-align: center;
-    padding-top: 5px;
-    float: right;
-}
-
-menu#itens li {
-    display: inline-block;
-    padding-left: 30px;
-    list-style-type: none;
-}
-
-menu#itens a {
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
 article {
     background-color: white;
-    width: 60%;
+    width: 70%;
     margin: auto;
     padding: 40px;
+    border-radius: 8px;
 }
 
 article h1 {
@@ -81,53 +21,4 @@ article p {
 article ul {
     margin-left: 20px;
     line-height: 2em;
-}
-
-footer {
-    background-color: #48A3BD;
-    height: 60px;
-}
-
-footer p {
-    display: inline-block;
-    margin-left: 100px;
-    color: #E2FCEF;
-    font-size: 1.2em;
-    padding-top: 20px;
-}
-
-footer a {
-    text-decoration: none;
-    color: #E2FCEF;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-section#contato {
-    display: block;
-    float: right;
-    margin-right: 100px;
-}
-
-section#contato > menu li {
-    display: inline-block;
-    padding: 10px;
-}
-
-section#contato > menu img {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.300);
-    box-sizing: border-box; 
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-}
-
-section#contato > menu img:hover {
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.300);
-    transform: translate(-1px, -1px);
-    transition: transform .5s, border .5s;
 }

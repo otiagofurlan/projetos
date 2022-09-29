@@ -12,42 +12,6 @@
 <body onresize="mudouTamanho()">
         <header id="principal">
             <div id="cabeçalho">
-                <p>Simone Furlan.</p>
-                <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
-                <menu id="itens">
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="informacao.html">Informações</a></li>
-                        <li><a href="beneficios.html">Benefícios</a></li>
-                    </ul>
-                </menu>
-            </div>
-            <div id="inicio">
-                <h1>YoguiSi</h1>
-            </div>
-        </header>
-        <main>
-            <section id="fotos">
-                <img src="imagens/imagem-01.jpg" alt="">
-                <img src="imagens/imagem-02.jpg" alt=""> <br>
-                <img src="imagens/imagem-03.png" alt="">
-                <img src="imagens/imagem-04.jpg" alt=""> <br>
-                <img src="imagens/imagem-05.png" alt="">
-                <img src="imagens/imagem-06.png" alt=""> 
-            </section>
-            <section id="sobre">
-                <h1>Sobre</h1>
-                <img src="imagens/perfil.jpg" alt="">
-                <div class="texto">
-                    <p>Minha jornada no yoga começou em setembro de 2018, com 47 anos. Tive que parar de participar das aulas na academia quando começou a pandemia em 2020, o que não me impediu de continuar praticando em casa e foi o que me deu suporte naquele período difícil. Agora estou concluindo o curso de instrutora de yoga e é o que eu quero pra vida toda! Amo demais!
-                    </p>
-                    <p class="data">• 16 de setembro de 2022.</p>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>Site desenvolvido por <a href="https://www.instagram.com/otiagofurlan/" target="_blank">Tiago Furlan</a>.</p>
-            <section id="contato">
                 <menu id="social">
                     <ul>
                         <li><a href="https://www.instagram.com/simonee.furlan/" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a></li>
@@ -56,11 +20,41 @@
                         <li><a href="https://api.whatsapp.com/send?phone=5515996341813" target="_blank"><img src="imagens/whatsapp.png" alt="Whatsapp"></a></li>
                     </ul>
                 </menu>
+                <h1>YoguiSi</h1>
+                <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                <menu id="itens">
+                    <ul>
+                        <li><a href="informacao.html">Informações</a></li>
+                        <li><a href="beneficios.html">Benefícios</a></li>
+                    </ul>
+                </menu>
+            </div>
+        </header>
+        <main>
+            <section id="fotos">
+                <img src="imagens/imagem-01.jpg" alt="imagem-01">
+                <img src="imagens/imagem-02.jpg" alt="imagem-02"> <br>
+                <img src="imagens/imagem-03.png" alt="imagem-03">
+                <img src="imagens/imagem-04.jpg" alt="imagem-04"> <br>
+                <img src="imagens/imagem-05.png" alt="imagem-05">
+                <img src="imagens/imagem-06.png" alt="imagem-06"> 
             </section>
+            <section id="sobre">
+                <h1>Sobre</h1>
+                <img src="imagens/perfil.jpg" alt="foto-simone-furlan">
+                <div class="texto">
+                    <p>Minha jornada no yoga começou em setembro de 2018, com 47 anos. Tive que parar de participar das aulas na academia quando começou a pandemia em 2020, o que não me impediu de continuar praticando em casa e foi o que me deu suporte naquele período difícil. Agora estou concluindo o curso de instrutora de yoga e é o que eu quero pra vida toda! Amo demais!
+                    </p>
+                    <p class="data">• Setembro de 2022.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Site desenvolvido por <a href="https://www.instagram.com/otiagofurlan/" target="_blank">Tiago Furlan</a>.</p>
         </footer>
         <script>
             function mudouTamanho() {
-                if (window.innerWidth >= 768) {
+                if (window.innerWidth >= 620) {
                     itens.style.display = 'block'
                 }
                 else {
