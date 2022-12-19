@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+article {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+article h1 {
+    font-size: 1.5em;
+}
+
+article p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+article ul {
+    margin-left: 20px;
+    line-height: 2em;
+}

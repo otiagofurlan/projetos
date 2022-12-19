@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoguiSi</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css" media="screen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onresize="mudouTamanho()">
+        <header id="principal">
+            <div id="cabeçalho">
+                <menu id="social">
+                    <ul>
+                        <li><a href="https://www.instagram.com/simonee.furlan/" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="https://youtube.com/channel/UCiBpg4daeP_T-iYLFDAFaNQ" target="_blank"><img src="imagens/youtube.png" alt="Youtube"></a></li>
+                        <li><a href="https://www.facebook.com/simone.furlan.90" target="_blank"><img src="imagens/facebook.jpg" alt="Facebook"></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5515996341813" target="_blank"><img src="imagens/whatsapp.png" alt="Whatsapp"></a></li>
+                    </ul>
+                </menu>
+                <h1>YoguiSi</h1>
+                <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                <menu id="itens">
+                    <ul>
+                        <li><a href="informacao.html">Informações</a></li>
+                        <li><a href="beneficios.html">Benefícios</a></li>
+                    </ul>
+                </menu>
+            </div>
+        </header>
+        <main>
+            <section id="fotos">
+                <img src="imagens/imagem-01.jpg" alt="imagem-01">
+                <img src="imagens/imagem-02.jpg" alt="imagem-02"> <br>
+                <img src="imagens/imagem-03.png" alt="imagem-03">
+                <img src="imagens/imagem-04.jpg" alt="imagem-04"> <br>
+                <img src="imagens/imagem-05.png" alt="imagem-05">
+                <img src="imagens/imagem-06.png" alt="imagem-06"> 
+            </section>
+            <section id="sobre">
+                <h1>Sobre</h1>
+                <img src="imagens/perfil.jpg" alt="foto-simone-furlan">
+                <div class="texto">
+                    <p>Minha jornada no yoga começou em setembro de 2018, com 47 anos. Tive que parar de participar das aulas na academia quando começou a pandemia em 2020, o que não me impediu de continuar praticando em casa e foi o que me deu suporte naquele período difícil. Agora estou concluindo o curso de instrutora de yoga e é o que eu quero pra vida toda! Amo demais!
+                    </p>
+                    <p class="data">• Setembro de 2022.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Site desenvolvido por <a href="https://www.instagram.com/otiagofurlan/" target="_blank">Tiago Furlan</a>.</p>
+        </footer>
+        <script>
+            function mudouTamanho() {
+                if (window.innerWidth >= 620) {
+                    itens.style.display = 'block'
+                }
+                else {
+                    itens.style.display = 'none'
+                }
+            }
+                
+            function clickMenu() {
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none'
+                }
+                else {
+                itens.style.display = 'block'
+                }
+            }
+        </script>
+</body>
+</html>

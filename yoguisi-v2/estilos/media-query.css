@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1100px) and (min-width: 700px){
+    section#fotos img {
+        width: 40%;
+    }
+} 
+
+@media screen and (max-width: 800px) {
+    div#cabeçalho {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    div#cabeçalho h1 {
+        font-size: 1.3em;
+        border-right: 0px;
+    }
+
+    menu#itens a {
+        font-size: 1.1em;
+    }
+
+    menu#itens li {
+        padding-left: 5px;
+    }
+
+    section#sobre h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section#local {
+        width: 95%;
+    }
+    article {
+        width: 80%;
+        padding: 15px;
+    }
+    iframe {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    span#burguer {
+        display: block;
+    }
+
+    menu#itens {
+        display: none;
+        margin-top: 15px;
+    }
+
+    menu#itens li{
+        display: inline-block;
+        padding: 8px;
+    }
+
+    section img {
+        width: 80%;
+    }
+
+    section#sobre img {
+        width: 80%;
+    }
+
+    div.texto {
+        width: 80%;
+    }
+
+    div.texto p {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    div#cabeçalho h1 {
+        font-size: 1.3em;
+    }
+
+    footer p {
+        font-size: .9em;
+    }
+
+    section#local h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    div#cabeçalho h1 {
+        display: none;
+    }
+}
