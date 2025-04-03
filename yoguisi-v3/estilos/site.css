@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Sora';
+}
+
+
+/* header */
+
+
+div#navegacao {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "span menu social .";
+    align-items: center;
+    background-color: #272749;
+    height: 60px;
+}
+
+div#menu {
+    grid-area: menu;
+}
+
+div#menu a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    padding: 18px;
+}
+
+div#menu a:hover {
+    background-color: #2d2d53;
+}
+
+
+/* menu hamburguer */
+
+
+span#burguer {
+    display: none;
+    color: white;
+    grid-area: span;
+}
+
+span#burguer:hover {
+    cursor: pointer;
+}
+
+
+/* redes sociais */
+
+
+menu#social {
+    text-align: right;
+    grid-area: social;
+}
+
+
+menu#social li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+menu#social img {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.300);
+    box-sizing: border-box; 
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+menu#social img:hover {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.300);
+    transform: translate(-1px, -1px);
+    transition: transform .5s, border .5s;
+}
+
+
+/* footer */
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A74482;
+    height: 60px;
+}
+
+footer p {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* media query */
+
+
+@media screen and (max-width: 620px) {
+
+    div#navegacao {
+        padding-right: 20px;
+        padding-left: 20px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "span social"
+        "menu menu";
+    }
+
+    div#navegacao a {
+        font-size: .9em;
+    }
+
+    div#menu {
+        display: none;
+        margin-bottom: -45px;
+    }
+
+    div#menu a {
+        padding: 10px;
+        background-color: #272749;
+    }
+
+    span#burguer {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    div#navegacao {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    footer p {
+        font-size: .9em;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    
+    div#navegacao {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    div#menu {
+        margin-bottom: -35px;
+    }
+
+    div#menu a {
+        padding: 5px;
+        font-size: .8em;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    div#menu {
+        margin-bottom: -30px;
+    }
+
+    div#menu a {
+        font-size: .7em;
+    }
+    
+}

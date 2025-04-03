@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoguiSi</title>
+    <link rel="stylesheet" href="estilos/inicio.css">
+    <link rel="stylesheet" href="estilos/media-inicio.css" media="screen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onresize="mudouTamanho()">
+        <header>
+
+            <div id="inicio">
+                <h1>YoguiSi</h1>
+                <P>La vie est belle.</P>
+            </div>
+
+            <div id="navegacao">
+
+                <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                <div id="menu">
+                    <a href="asanas.html">Ásanas</a>
+                    <a href="beneficios.html">Benefícios do Yoga</a>
+                    <a href="sobre.html">Sobre mim</a>
+                </div>
+
+                <menu id="social">
+                    <ul>
+                        <li><a href="https://www.instagram.com/simonee.furlan/" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="https://youtube.com/channel/UCiBpg4daeP_T-iYLFDAFaNQ" target="_blank"><img src="imagens/youtube.png" alt="Youtube"></a></li>
+                        <li><a href="https://www.facebook.com/simone.furlan.90" target="_blank"><img src="imagens/facebook.jpg" alt="Facebook"></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5515996341813" target="_blank"><img src="imagens/whatsapp.png" alt="Whatsapp"></a></li>
+                    </ul>
+                </menu>
+
+            </div>
+        </header>
+        <main>          
+            
+            <h1>Seja muito bem-vinda(o)</h1>
+            <section>
+                <h2>O que é o Yôga?</h2>
+                <p>O Yôga tem como objetivo trabalhar o corpo e a mente de forma integrada, através de diversas técnicas que irão proporcionar melhora na qualidade de vida, auxiliando no controle da ansiedade, dores no corpo e estresse. Para ter todos os benefícios que ela proporciona é preciso que as práticas sejam feitas regularmente e de preferência com ajuda de um profissional.</p>
+                <section>
+            </section>
+                <h2>Yôga gratuito em Buri!</h2>
+                <p>Em parceria com a Prefeitura Municipal de Buri, realizamos todas as quintas-feiras às 18:30 aulas gratuitas de Yôga no Centro de Eventos Roque Rosa Lima (atrás da Igreja Matriz). Você só precisa levar uma toalha para a realização da prática!</p>
+            </section> 
+            <img src="imagens/imagem-inicial.jpg" alt="">
+        </main>
+        <footer>
+            <p>Site desenvolvido por <a href="https://www.instagram.com/otiagofurlan/" target="_blank">Tiago Furlan</a>.</p>
+        </footer>
+        <script>
+            function mudouTamanho() {
+                if (window.innerWidth >= 620) {
+                    menu.style.display = 'block'
+                }
+                else {
+                    menu.style.display = 'none'
+                }
+            }
+                
+            function clickMenu() {
+                if (menu.style.display == 'block') {
+                    menu.style.display = 'none'
+                }
+                else {
+                menu.style.display = 'block'
+                }
+            }
+        </script>
+</body>
+</html>

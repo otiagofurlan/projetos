@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="estilos/site.css">
+    <link rel="stylesheet" href="estilos/sobre.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+
+        <div id="navegacao">
+
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+            <div id="menu">
+                <a href="index.html">Início</a>
+                <a href="asanas.html">Ásanas</a>
+                <a href="beneficios.html">Benefícios</a>
+            </div>
+    
+            <menu id="social">
+                <ul>
+                    <li><a href="https://www.instagram.com/simonee.furlan/" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://youtube.com/channel/UCiBpg4daeP_T-iYLFDAFaNQ" target="_blank"><img src="imagens/youtube.png" alt="Youtube"></a></li>
+                    <li><a href="https://www.facebook.com/simone.furlan.90" target="_blank"><img src="imagens/facebook.jpg" alt="Facebook"></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5515996341813" target="_blank"><img src="imagens/whatsapp.png" alt="Whatsapp"></a></li>
+                </ul>
+            </menu>
+    
+        </div>
+    </header>
+
+        <main>
+            
+            <h1>Simone Furlan</h1>
+            <section>
+                <img src="imagens/perfil.jpg" alt="">
+                <div id="texto">
+                    <p>Minha jornada no yôga iniciou em setembro de 2018, portanto, há quatro anos, 
+                        numa academia de ginástica da pequena cidade de Buri. Na época, eu contava com 47 
+                        anos e pensei, antes tarde do que nunca!
+                    </p>
+                    <p>Desde a primeira aula, fiquei encantada com a sutileza com que os movimentos eram 
+                        realizados. Nada de muito brusco ou repetitivo. Era uma turma pequena, de 3 ou 4 
+                        alunas somente. No decorrer do  tempo algumas entravam e saíam e eu permanecia.
+                    </p>
+                    <p>Lembro que fazíamos alguns respiratórios simples  e ásanas. O tempo foi passando e 
+                        chegamos em março de 2020 quando fomos chacoalhados com a pandemia do covid, com 
+                        a terrível mudança em nossa rotina e o fechamento das academias. Assim, não restou 
+                        outra alternativa senão praticar yôga em casa, com auxílio da internet.
+                    </p>
+                    <p class="data">• Dezembro de 2022.</p>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <p>Site desenvolvido por <a href="https://www.instagram.com/otiagofurlan/" target="_blank">Tiago Furlan</a>.</p>
+        </footer>
+        <script>
+            function mudouTamanho() {
+                if (window.innerWidth >= 620) {
+                    menu.style.display = 'block'
+                }
+                else {
+                    menu.style.display = 'none'
+                }
+            }
+                
+            function clickMenu() {
+                if (menu.style.display == 'block') {
+                    menu.style.display = 'none'
+                }
+                else {
+                menu.style.display = 'block'
+                }
+            }
+        </script>
+</body>
+</html>

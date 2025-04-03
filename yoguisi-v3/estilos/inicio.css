@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Sora';
+}
+
+
+/* header */
+
+
+div#inicio {
+    display: flex;
+    background-color: #1B1B3A;
+    color: white;
+    height: 170px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+div#inicio h1 {
+    color: white;
+    font-family: 'Edu TAS Beginner';
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
+}
+
+div#inicio p {
+    color: white;
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
+    border-left: 2px solid rgb(255, 255, 255);
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+
+/* navegação */
+
+
+div#navegacao {
+    display: grid;
+    grid-template-areas: "span menu social .";
+    align-items: center;
+    background-color: #272749;
+    height: 60px;
+}
+
+div#menu {
+    grid-area: menu;
+}
+
+div#menu a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    padding: 18px;
+}
+
+div#menu a:hover {
+    background-color: #2d2d53;
+}
+
+
+/* menu hamburguer */
+
+
+span#burguer {
+    display: none;
+    color: white;
+    grid-area: span;
+}
+
+span#burguer:hover {
+    cursor: pointer;
+}
+
+
+/* redes sociais */
+
+menu#social {
+    text-align: right;
+    grid-area: social;
+}
+
+
+menu#social li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+menu#social img {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.300);
+    box-sizing: border-box; 
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+menu#social img:hover {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.300);
+    transform: translate(-1px, -1px);
+    transition: transform .5s, border .5s;
+}
+
+
+/* main */
+
+
+main {
+    text-align: center;
+}
+
+main p {
+    margin-bottom: 40px;
+    text-indent: 2em;
+}
+
+main h1 {
+    color: #A74482;
+    font-weight: 1000;
+    font-size: 2.5em;
+    margin: 60px 0px 10px 0px;
+}
+
+main h2 {
+    color: #A74482;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main img {
+    width: 900px;
+}
+
+section {
+    width: 900px;
+    margin: auto;
+    text-align: justify;
+}
+
+
+/* footer */
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A74482;
+    height: 60px;
+    margin-top: 80px;
+}
+
+footer p {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+

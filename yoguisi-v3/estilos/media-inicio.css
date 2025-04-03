@@ -1,0 +1,112 @@
+@media screen and (max-width: 920px) {
+    main img {
+        width: 80%;
+    }
+
+    section {
+        width: 80%;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    div#navegacao {
+        padding-right: 20px;
+        padding-left: 20px;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "span social"
+        "menu menu";
+    }
+
+    div#navegacao a {
+        font-size: .9em;
+    }
+
+    div#menu {
+        display: none;
+        margin-bottom: -45px;
+    }
+
+    div#menu a {
+        padding: 10px;
+        background-color: #272749;
+    }
+
+    span#burguer {
+        display: block;
+    }
+
+    main img {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    div#inicio h1 {
+        font-size: 2em;
+    }
+
+    div#inicio p {
+        font-size: 1.5em;
+        margin-top: 0px;
+    }
+
+    div#navegacao {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    main h1 {
+        font-size: 1.5em;
+    }
+
+    footer p {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    div#navegacao {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    div#menu {
+        margin-bottom: -35px;
+    }
+
+    div#menu a {
+        padding: 5px;
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    div#inicio h1 {
+        padding-left: 40px;
+    }
+    div#inicio p {
+        padding-right: 40px;
+    }
+
+    div#menu {
+        margin-bottom: -30px;
+    }
+
+    div#menu a {
+        font-size: .7em;
+    }
+
+}
